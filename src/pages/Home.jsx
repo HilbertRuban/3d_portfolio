@@ -1,6 +1,7 @@
 const Home = () => {
   return (
-    <div>Home</div>
+    <section className="w-full h-screen relative"> 
+    </section>
   )
 }
 export default Home
