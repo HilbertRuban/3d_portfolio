@@ -1,5 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useState } from "react";
+import HomeInfo from "../components/HomeInfo";
 import Loader from "../components/Loader";
 import Bird from "../models/Bird";
 import Island from "../models/Island";
@@ -40,6 +41,9 @@ const Home = () => {
   const [isPlaneScale, isPlanePosition] = adjustPlaneForScreenSize();
   return (
     <section className="w-full h-screen relative">
+      <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
+        {currentStage && <HomeInfo currentStage={currentStage}/>}
+      </div>
       <Canvas
         className={`w-full h-screen bg-transparent ${
           isRotating ? "cursor-grabbing" : "cursor-grab"
@@ -55,7 +59,7 @@ const Home = () => {
             intensity={1}
           />
           <Bird />
-          <Sky isRotating={isRotating}/>
+          <Sky isRotating={isRotating} />
           <Island
             position={islandPosition}
             scale={islandScale}
