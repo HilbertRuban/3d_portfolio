@@ -20,25 +20,25 @@ const renderContent = {
   ),
   2: (
     <InfoBox
-      text="Working hard person efkeanfjneskfn aekjdnkeanfkjeanfkjena eakjfneakjnfkjeankjfnae ajfnfkaenfkjnaeljfneja fjakenfkjaenfkjanekjfnekja"
+      text="Worked with various teams and picked up many skills along the way"
       link="/about"
       btnText="Learn more"
     />
   ),
   3: (
     <InfoBox
-    text="Led multiple projects in recent years. Curious about the impact?"
-    link="/projects"
-    btnText="Visit my portfolio"
-  />
+      text="Led multiple projects in recent years. Curious about the impact?"
+      link="/projects"
+      btnText="Visit my portfolio"
+    />
   ),
   4: (
     <InfoBox
-    text="Need a project done or looking for a dev? I'm just a few keystrokes away"
-    link="/contact"
-    btnText="Let's talk"
-  />
-  )
+      text="Need a project done or looking for a dev? I'm just a few keystrokes away"
+      link="/contact"
+      btnText="Let's talk"
+    />
+  ),
 };
 
 const HomeInfo = ({ currentStage }) => {
