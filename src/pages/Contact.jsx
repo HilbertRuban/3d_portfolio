@@ -1,10 +1,10 @@
 import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useRef, useState } from "react";
+import Alert from "../components/Alert";
 import Loader from "../components/Loader";
 import useAlert from "../hooks/useAlert";
 import Naruto from "../models/Naruto";
-import Alert from "../components/Alert";
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -54,12 +54,16 @@ const Contact = () => {
         setIsLoading(false);
         setCurrentAnimation("stand");
         console.log(error);
-        showAlert({show: true, text: "I didn't receive your message", type: 'danger'})
+        showAlert({
+          show: true,
+          text: "I didn't receive your message",
+          type: "danger",
+        });
       });
   };
   return (
-    <section className="relative flex lg:flex-row flex-col max-container">
-      {alert.show && <Alert {...alert}/>}
+    <section className="relative flex lg:flex-row flex-col max-container h-[100vh]">
+      {alert.show && <Alert {...alert} />}
       <div className="flex-1 min-w-[50%] flex flex-col">
         <h1 className="head-text">Get in Touch</h1>
 

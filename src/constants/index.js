@@ -1,10 +1,8 @@
 import {
   aws1,
   bitbucket,
-  car,
   contact,
   css,
-  estate,
   express,
   git,
   github,
@@ -15,24 +13,24 @@ import {
   linkedin,
   linux,
   mongodb,
-  motion,
   mui,
   mysql,
   nextjs,
   nodejs,
   php,
-  pricewise,
   python,
   react,
   redis,
   redux,
   sass,
-  snapgram,
   sql,
   summiz,
   tailwindcss,
-  threads,
   typescript,
+  apple,
+  movies,
+  chat,
+  video
 } from "../assets/icons";
 import { meta, shopify, starbucks, tesla } from "../assets/images";
 
@@ -195,5 +193,48 @@ export const socialLinks = [
     name: "LinkedIn",
     iconUrl: linkedin,
     link: "https://www.linkedin.com/in/YourLinkedInUsername",
+  },
+];
+
+export const projects = [
+  {
+    iconUrl: movies,
+    theme: "btn-back-red",
+    name: "MoviesVania",
+    description: `Developed a dynamic web application for seamless movie searches and comprehensive information
+      retrieval, leveraging Alan AI’s voice-controlled capabilities for effortless browsing and theme customization.`,
+    link: "https://moviesvania.netlify.app/",
+  },
+  {
+    iconUrl: chat,
+    theme: "btn-back-green",
+    name: "Batchat",
+    description:
+      "Designed an interactive web application for seamless real-time communication, utilizing technologies such as ReactJS, Zustand, Vite, Tailwind CSS, DaisyUI, Node.js, Express.js, MongoDB, Mongoose, and WebSocket.io",
+    link: "https://batchat.onrender.com/",
+  },
+  {
+    iconUrl: apple,
+    theme: "btn-back-blue",
+    name: "iGlimpse",
+    description:
+      "Explore a captivating showcase of cutting-edge Apple products, from sleek mobile devices to stylish watches. Powered by HTML5, CSS, and JavaScript, this website offers an immersive experience in UI.",
+    link: "https://apple-esite-2376.netlify.app/",
+  },
+  {
+    iconUrl: summiz,
+    theme: "btn-back-yellow",
+    name: "AI Summarizer Application",
+    description:
+      "App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.",
+    link: "https://article-summary-ai.netlify.app/",
+  },
+  {
+    iconUrl: video,
+    theme: "btn-back-red",
+    name: "Finder",
+    description:
+      '"Finder" is a website that replicates the functionality and user experience of YouTube, offering a platform for video and community engagement. Explore and contribute to a wide array of videos, just like you would on YouTube.',
+    link: "https://finder-316570.netlify.app",
   },
 ];
