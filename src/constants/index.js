@@ -164,16 +164,15 @@ export const skills = [
 
 export const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#accbe1",
-    date: "March 2020 - April 2021",
+    title: "Software Programmer",
+    company_name: "Targetbay",
+    date: "March 2022 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Led the optimization efforts within the production team, rectifying server log errors and fine-tuning slow queries, akin to a Site Reliability Engineer (SRE). These initiatives resulted in significant enhancements to application reliability and operational efficiency and MySQL query performance.",
+      "Implemented a cost-saving initiative by creating an in-house URL shortening service to replace Rebrandly service, resulting in an approximate savings of $1000.",
+      "Developed robust integrations with both Google Ads and Facebook Ads APIs for seamless customer synchronization and comprehensive campaign management, driving significant revenue growth and expanding customer acquisition efforts.",
+      "Implemented rewards system service to enhance customer revenue. This strategic implementation resulted in revenue generation and customer retention.",
+      "PHP, Laravel, Mysql, NodeJS, ExpressJS, MongoDB, ReactJS, AWS SES, Redis, Rapid7 Insight, Sentry."
     ],
   },
 ];

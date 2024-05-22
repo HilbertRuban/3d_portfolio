@@ -1,4 +1,5 @@
-import { skills } from "../constants";
+import CTA from "../components/CTA";
+import { experiences, skills } from "../constants";
 
 const About = () => {
   return (
@@ -42,14 +43,45 @@ const About = () => {
         <h3 className="subhead-text">Work Experience</h3>
         <div className="mt-5 flex flex-col gap-3 text-slate-500">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim autem
-            eaque laboriosam, repellendus, adipisci similique maiores animi,
-            veniam saepe nihil libero quibusdam exercitationem! Quis nostrum
-            tenetur veniam ab iste labore.
+            I've collaborated with various teams over the past two years,
+            continuously enhancing my skills alongside talented professionals.
+            Here's a summary of my journey:
           </p>
         </div>
-        <div className="mt-12 flex"></div>
+        <div className="mt-12">
+          {experiences.map((experience) => (
+            <>
+              <div>
+                <h3 className="text-black text-xl font-poppins font-semibold">
+                  {experience.title}{" "}
+                  <span className="text-sm text-black-500/50">
+                    ({experience.date})
+                  </span>
+                </h3>
+                <p
+                  className="text-black-500 font-medium text-base"
+                  style={{ margin: 0 }}
+                >
+                  {experience.company_name}
+                </p>
+              </div>
+              <ul className="my-5 list-disc ml-5 space-y-2">
+                {experience.points.map((point, index) => (
+                  <li
+                    key={`experience-point-${index}`}
+                    className="text-black-500/80 pl-1 text-lg"
+                  >
+                    {point}
+                  </li>
+                ))}
+              </ul>
+            </>
+          ))}
+        </div>
       </div>
+      <hr className="border-slate-200" />
+
+      <CTA />
     </section>
   );
 };
