@@ -165,7 +165,7 @@ export const skills = [
 export const experiences = [
   {
     title: "Software Programmer",
-    company_name: "Targetbay",
+    company_name: "Targetbay, Chennai",
     date: "March 2022 - Present",
     points: [
       "Led the optimization efforts within the production team, rectifying server log errors and fine-tuning slow queries, akin to a Site Reliability Engineer (SRE). These initiatives resulted in significant enhancements to application reliability and operational efficiency and MySQL query performance.",
